@@ -1,0 +1,173 @@
+*{margin: 0 0 0 0; padding: 0 0 0 0;}
+body{
+	background-image:url("img/plano.gif");
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	width: 100%; overflow-x: hidden;
+}
+
+#corpo{
+	position: relative; 
+	margin: 15px auto 0; width: 1100px;
+}
+
+/**
+ * Formatações Especiais
+ * Última modificação: 21 ago. 2014
+ */
+.text-underline{
+	text-decoration: underline!important;
+}
+
+.text-bold{
+	font-weight: bold!important;
+}
+
+/**
+ * Header
+ * Última modificação: 19 ago. 2014
+ */
+header{
+	list-style: none;
+	position: relative;
+	width: 1100px; margin: 0 auto; 
+}
+
+li a[href *="www.unesp.br"]{
+	background-image: url("img/topo_logotipo.gif");
+	width: 167px; height: 72px;
+	float: left; clear: left;
+	text-indent: -999px;
+}
+
+li a[href *="www.fct.unesp.br"]{
+	background-image: url("img/topo_campus.gif");
+	width: 230px; height: 72px;
+	float: left;
+	text-indent: -999px;
+}
+
+li img[src *="topo_fundo.gif"]{
+	background-image: url("images/topo_fundo.gif");
+	width: 98px; height: 72px;
+	float: left;
+}
+
+li img[src *="topo_direita.gif"]{
+	background-image: url("images/topo_direita.gif");
+	float: right;
+}
+
+header nav{
+	position: absolute;
+	top: 0; right: 0;
+	margin: 2px 20px 0 0;
+}
+
+header nav a, header nav p{
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif; color: #28405b;
+	text-decoration: none;
+}
+
+header nav a:hover{
+	text-decoration: underline;
+}
+
+#faculdade h1{
+	font: bold 16px Verdana, Arial, Helvetica, sans-serif;
+	color: #fff; margin-left: 10px;
+}
+
+/**
+ * Menu Lateral
+ * Última modificação: 28 ago. 2014
+ */
+#menu{
+	position: relative; 
+	background: #ffffff; border-radius: 15px 15px 15px 15px;
+	width: 190px; min-height: 350px; padding: 5px 2px;
+	float: left;
+}
+
+.button{
+	list-style: none;
+	margin: 5px 5px 5px 5px;
+	padding: 4px 4px 4px 4px;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #DAE7F4;
+}
+
+.button a{
+	text-decoration: none;
+	color: #28405b; font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.button a:hover{ text-decoration: underline;}
+
+.box-software{
+	margin-left: 15px;
+	display: none; padding: 0 4px 4px;
+	list-style-type: none;
+}
+
+.list-software{
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 7px;
+}
+
+.list-software:hover{
+	text-decoration: underline; cursor: pointer;
+}
+/**
+ * Bloco de Conteúdo
+ * Última modificação: 28 ago. 2014
+ */
+.conteudo{
+	background: #ffffff; width: 900px; 
+	border-radius: 15px 15px 15px 15px;
+	position: relative; float: right;
+	padding-bottom: 60px;
+}
+
+.conteudo-titulo{
+	position: relative;
+	margin: 25px 0 0 25px;
+	color:#28405b; font: bold 16px Verdana, Arial, Helvetica,sans-serif;
+}
+.descricao-titulo{
+	margin: 30px 0 20px 45px;
+	color: #000; font: bold 12px Verdana, Arial, Helvetica,sans-serif;
+}
+.mapa-navegacao{
+	position: relative;
+	border-bottom: 1px solid #023F88;
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif; color: #aaaaaa;
+	padding-bottom: 8px;
+	margin: 15px 25px 0;
+}
+.mapa-navegacao a{color: #888888;}
+
+/**
+ * Rodapé
+ * Última modificação: 20 ago. 2014
+ */
+footer{
+	position: relative; top: 20px;
+	margin: 0 auto; clear: both;
+	width: 1100px; height: 80px;
+	border-radius: 15px 15px 0 0;
+	background: #1f406e url("images/rodape_simbolo.gif") no-repeat bottom right;
+}
+footer nav{
+	position: relative; display: block;top: 35px; left: 400px;
+}
+
+footer nav a, footer nav p{
+	line-height: 80px; vertical-align: middle;
+	color: #fff; text-decoration: none;
+	font: 12px Verdana, Arial, Helvetica, sans-serif;;
+}
+
+footer nav a:hover{
+	text-decoration: underline;
+}

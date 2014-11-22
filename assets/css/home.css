@@ -1,0 +1,39 @@
+.cycle{
+	position: relative;
+	width: 500px; height: 300px;
+	margin: 35px 35px;
+	box-shadow: 0 0 4px #ccc;
+}
+.cycle img{
+	width: 500px; height: 300px; z-index: 5;
+}
+.cycle-overlay{
+	position: absolute;
+	background: #000;
+	width: 470px;
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	opacity: 0.5;
+	color: white;
+	padding: 15px;
+	bottom: 0; z-index: 100;
+}
+.cycle a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px; font-weight: bold;
+}
+.cycle a:hover{
+	text-decoration: underline;
+}
+.pager{
+	display: inline; text-align: center;
+}
+.pager-item{
+	display: inline-block;
+	width: 15px; height: 15px;
+	background: #000;
+	margin: 10px 2px;
+	opacity: 0.5;
+	cursor: pointer;
+}
+

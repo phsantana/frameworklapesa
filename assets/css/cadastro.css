@@ -1,0 +1,45 @@
+/**
+ * Formulário
+ * Última modificação: 27 ago. 2014
+ */
+.formulario{
+	position: relative;
+	margin: 20px 0 0 50px;
+	width: 350px;
+}
+
+.formulario label{
+	display: block;
+	margin-top: 10px;
+	font: 13px Verdana, Arial, Helvetica, sans-serif;
+}
+
+input[type="text"], input[type="email"], textarea, select{
+	margin-top: 4px; border: 1px solid #aaa;
+	border-radius: 5px; outline: none;
+	padding: 3px 6px 3px 6px;
+	width: 200px;
+	font: 13px Verdana, Arial, Helvetica, sans-serif;
+}
+
+input[type="text"], input[type="email"]{height: 22px;}
+select{height: 26px;}
+textarea{
+	resize: none;
+	width: 330px; height: 110px;
+}
+input[type="submit"]{
+	width: 50px; height: 25px;
+	cursor: pointer;
+	margin-top: 25px;
+	float: right;
+}
+#campo-outro{display: none;}
+.valido{
+	background-color: transparent; 
+	border-color: #aaa;
+}
+.invalido{
+	background-color: rgb(255,186,186);
+	border-color: #D8000C!important;
+}

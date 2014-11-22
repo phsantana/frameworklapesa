@@ -1,0 +1,30 @@
+/**
+ * Conteúdo Apresentação
+ * 	Última modificação: 01 set. 2014
+ */
+
+.conteudo-apresentacao{
+	position: relative;
+	width: 90%;
+	margin: 20px auto;
+}
+
+.conteudo-apresentacao figure{
+	position: relative; display: block;
+	margin: 20px auto;
+}
+
+.conteudo-apresentacao figure img{
+	display: block; margin: 0 auto;
+}
+
+.conteudo-apresentacao figcaption{
+	text-align: center;
+	font: 11px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.conteudo-apresentacao p{
+	position: relative; font: 12px Verdana, Arial, Helvetica, sans-serif;
+	text-align: justify; text-indent: 35px;
+	
+}

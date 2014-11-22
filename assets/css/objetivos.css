@@ -1,0 +1,14 @@
+/**
+ * Descrição dos Objetivos do Laboratório
+ * Última modificação: 01 set. 2014
+ */
+.descricao-objetivos{
+	position: relative; display: block;
+	margin: 25px 45px 0;
+}
+
+.descricao-objetivos p{
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	text-indent: 35px; text-align: justify;
+	margin-top: 5px;
+}

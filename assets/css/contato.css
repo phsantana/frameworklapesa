@@ -1,0 +1,15 @@
+/**
+ * Descrição
+ * Última modificação: 01 set. 2014
+ */
+figure img[src *="contato.jpg"]{
+	position: relative; display: inline; 
+	margin-right: 25px;
+	float: right;
+}
+
+article{
+	display: inline;
+	font: 14px Verdana, Arial, Helvetica, sans-serif;
+	float: left; margin: 15px 0 0 75px;
+}

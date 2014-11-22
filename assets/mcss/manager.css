@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+*{padding: 0; margin: 0;}
+body{
+	background: url("images/plano.png");
+}
+/**
+ * Seção Login
+ * Última modificação: 21 ago. 2014
+ */
+.secao-login{
+	display: none;
+	position: fixed; z-index: 100;
+	background: rgba(0,0,0,0.6);
+	top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.formulario-login{
+	margin: auto;
+	width: 500px; height: 300px;
+	background: #f9f9f9; box-shadow: 0 0 8px #222;
+}
+
+.formulario-login header{
+	width: 100%; height: 45px;
+	background-color: #fff; box-shadow: 0 0 8px #bbb;
+}
+
+.formulario-login header p{
+	font: 19px Calibri; color: #aaa; 
+	line-height: 50px; vertical-align: middle;
+	margin-left: 15px;
+}
+
+.formulario > form{
+	width: 80%;
+	padding: 15px 40px;
+}
+
+.formulario label{
+	display: block; margin-top: 10px;
+	font: 18px Calibri; color: #222;
+}
+
+input[type="email"], input[type="password"]{
+	margin-top: 5px; padding: 0 5px; border: 1px solid #ccc;
+	width: 200px; height: 32px;
+	font: 16px Calibri;
+}
+
+input[type="submit"]{
+	float: right; margin-top: 10px;
+	box-shadow: 0 0 8px #bbb; border: 1px solid #aaa;
+	width: 70px; height: 30px; font: 16px Calibri; cursor: pointer;
+}
+
+/**
+ * Header
+ * Última modifcação: 03 set. 2014
+ */
+.barra{
+	position: fixed; z-index: 50;
+	top: 0; left: 0;
+	width: 100%;
+	background: #f9f9f9;
+	box-shadow: 0 2px 8px #bbb;
+}
+
+#menu-botao{
+	display: inline-table;
+	padding: 0 10px; color: #aaa;
+	height: inherit; margin-left: 5px;
+	font: 16px Calibri; cursor: pointer;	
+}
+.sl-menu{
+	display: table-cell;
+	vertical-align: middle;
+}
+.sl-menu > b{
+	position: relative; display: block;
+	background: #aaa; 
+	width: 21px; height: 4px; margin: 0 6px 4px 0;
+	line-height: inherit; vertical-align: middle;
+}
+.menu-botao p{
+	display: table-cell;
+}
+.button-barra{
+	display: inline;
+	position: relative; float: right;
+	background: transparent;  
+	padding: 0 2px; cursor: pointer;
+	height: inherit; margin: 0 5px;
+
+}
+.button-barra img{
+	display: inline;
+	vertical-align: middle;
+}
+.titulo-barra{
+	position: relative;
+	display: inline-block;
+	padding-left: 10px;
+	margin-left: 5px;
+}
+.titulo-barra h1{
+	display: block; 
+	font: bold 20px Calibri; color: #aaa;
+	vertical-align: middle; 
+}
+
+/**
+ * Menu
+ * Última modificação: 02 set. 2014
+ */
+
+.menu{
+	display: block; z-index: 10;
+	width: 85vw;
+	padding: 0 15px 50px;
+	background: #f9f9f9; box-shadow: 0 0 8px #bbb;
+	margin: 85px auto;
+}
+
+.cabecalho{
+	position: relative; z-index: 0;
+	width: 100%; height: 40px;
+	border-bottom: 1px solid #bbb;
+}
+.cabecalho h1{
+	font: bold 18px Calibri; color: #aaa;
+	text-align: center; line-height: 40px; vertical-align: middle;
+}
+.opcoes-menu{
+	display: block;
+	margin-top: 30px;
+	text-align: center;
+	width: 100%; height: 200px;
+}
+.opcoes-menu button{
+	display: inline-block; margin: 15px 14px;
+	cursor: pointer; width: 160px!important; height: 190px!important;
+	background: #f9f9f9; box-shadow: inset 0 0 5px #bbb;
+	border-radius: 5px;
+	outline: none; border: 1px solid #bbb;
+	padding: 6px;
+}
+.opcoes-menu button:hover{
+	transform: scale(1.2);
+	background: #efefef;
+	transition: all 0.4s ease ;
+}
+.opcoes-menu button p{
+	font: 16px Calibri; color: #888;
+}
+.opcoes-menu button img{
+	display: block; margin: 0 auto;
+}
+
+
+/**
+ * Media Queries
+ * Última modifcação: 03 set. 2014
+ */
+@media (min-width: 1278px){
+	/*Menu*/
+	.menu{height: 300px;}
+
+	/*Barra-Header*/
+	.barra{height: 50px; line-height: 50px}
+	.titulo-barra h1, #menu-botao p{
+		line-height: 50px; font-size: 100%;
+	}
+	
+}
+
+@media (min-width: 636px) and (max-width: 1278px){
+	/*Menu*/
+	.menu{height: 510px;}
+
+	/*Barra-Header*/
+	.barra{height: 45px; line-height: 45px; }
+	.titulo-barra h1, #menu-botao p{
+		line-height: 45px; font-size: 90%;
+	}
+
+}
+
+@media (max-width: 635px){
+	/*Menu*/
+	.menu{height: 720px;} 
+
+	/*Barra-Header*/
+	.barra{height: 40px; line-height: 40px;}
+	.titulo-barra h1, #menu-botao p{
+		line-height: 40px; font-size: 80%;
+	}
+
+}
