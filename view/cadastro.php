@@ -3,8 +3,8 @@
 <head>
 	<?php require_once "frames/head.php" ?>
 	<title>Universidade Estadual Paulista - Lapesa - Cadastro</title>
-	<link rel="stylesheet" type="text/css" href="style/cadastro.css"/>
-	<script type="text/javascript" src="script/cadastro.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/cadastro.css"/>
+	<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/cadastro.js"></script>
 </head>
 <body>
 
@@ -30,7 +30,7 @@
 
 		<!--Formulário -->
 		<section class="formulario">
-			<form action="cadastrando.php" method="post" accept-charset="utf-8">
+			<form method="post" accept-charset="utf-8">
 
 				<label>Nome<br> <input type="text" pattern="^[a-zA-Zà-úÀ-Ú ]{2,30}$" autocomplete="off" title="Somente letras e acentos são permitidos. Até 30 caracteres." name="nome" maxlength="30" required/></label>
 				<label>Sobrenome<br> <input type="text" pattern="^[a-zA-Zà-úÀ-Ú ]{2,40}$" autocomplete="off" title="Apenas letras, acentos e espaços são permitidos. Até 50 caracteres." name="sob" maxlength="50" required/></label>

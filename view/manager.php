@@ -9,6 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/mcss/page.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/mcss/forms.css">
 	<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/mjs/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/mjs/effects.js"></script>
+	<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/mjs/function.js"></script>
 	<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/mjs/script.js"></script>
 </head>
 <body>

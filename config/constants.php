@@ -17,6 +17,7 @@
 	 */
 	define('PAGE_URL', 'http://localhost/Unesp%20-%20Lapesa/');
 
+
 	//
 	//	CONFIGURAÇÕES DE BANCO DE DADOS
 	//

@@ -3,17 +3,17 @@
 <head>
 	<?php require_once "frames/head.php" ?>
 	<title>Universidade Estadual Paulista - Lapesa - Objetivos</title>
-	<link rel="stylesheet" type="text/css" href="style/objetivos.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/objetivos.css" />
 </head>
 <body>
 
 <!--Cabeçalho-->
-<?php require 'estrutura/header.php' ?>
+<?php require 'frames/header.php' ?>
 
 <section id="corpo">
 
 	<!--Menu Lateral-->
-	<?php require 'estrutura/menu.php'; ?>
+	<?php require 'frames/menu.php'; ?>
 
 	<!--Conteúdo-->
 	<div class="conteudo">
@@ -36,7 +36,7 @@
 </section>
 
 <!--Rodapé-->
-<?php require 'estrutura/footer.php'; ?>
+<?php require 'frames/footer.php'; ?>
 
 </body>
 </html>

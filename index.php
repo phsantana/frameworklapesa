@@ -14,10 +14,18 @@
 
 	//Carregando as configurações
 	require_once 'config/constants.php';
-	
+
+	//Carregando o model ou helper
+	function __autoload($file){
+
+		require_once 'model/'. $file .'.php';
+	}
+
+
+	//Carregando o controller
 	if(file_exists('controller/'.$controller.'Controller.php')){
 		
-		require_once '/controller/'.$controller.'Controller.php';
+		require_once 'controller/'.$controller.'Controller.php';
 		$page = new $controller();
 			
 		if(method_exists($page, $action))
@@ -31,7 +39,5 @@
 		$page = new Error();
 		$page-> PageNotFound();
 	}
-
-
 
 ?>

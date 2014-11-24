@@ -9,14 +9,18 @@
 		 * Construtor da Classe Model
 		 * @param String $tabela [especifica qual a tabela a ser usada]
 		 */
-		public function __construct($tabela){
+		public function __construct(){
 
-			$this->tabela = $tabela;
-			$this->connection = new mysqli(HOST, USER, PASSWORD, DATABASE);
-			
+			$this->tabela;
+			$this->connection = new mysqli(HOST, USER, PASSWORD);
+
 			if(mysqli_connect_error()){
 				exit();
 			}
+
+			$this->connection->query("CREATE DATABASE IF NOT EXISTS `lapesa`");
+			$this->connection->select_db(DATABASE);
+			
 		}
 
 		/**

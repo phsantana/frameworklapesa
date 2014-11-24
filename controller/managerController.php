@@ -2,13 +2,17 @@
 
 	class Manager extends Controller{
 
-		private $username;
-		private $password;
-
 		public function index(){
+			
 			$this->view("manager");
-
 		}
+
+		public function addParticipante(){
+
+			$db = new Participante_Model();
+			$db->addParticipante();
+		}
+
 	}
 
 

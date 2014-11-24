@@ -25,13 +25,13 @@
 				<h1 class="page-titulo underline">Adicionar participante</h1>
 			</header>
 			<section class="content">
-				<form action="" method="post">
+				<form id="add_participante" method="post">
 					<table>
 						<tbody>
 							<tr>
 								<td>Nome Completo</td>
 								<td>
-									<input type="text" name="nomecompleto" pattern="^[a-zA-Zà-úÀ-Ú ]{2,50}$" autocomplete="off" title="Somente letras e acentos são permitidos. Até 40 caracteres.">
+									<input type="text" name="nome" pattern="^[a-zA-Zà-úÀ-Ú ]{2,50}$" autocomplete="off" title="Somente letras e acentos são permitidos. Até 40 caracteres.">
 								</td>
 							</tr>
 							<tr>
@@ -40,16 +40,16 @@
 							</tr>
 							<tr>
 								<td><em>Lattes</em> URL</td>
-								<td><input type="url" name="lattesurl" autocomplete="off"></td>
+								<td><input type="url" name="url" autocomplete="off"></td>
 							</tr>
 							<tr>
 								<td>Descrição</td>
 								<td>
 									<label> Descrição - Português Brasileiro
-										<textarea name="participantedesc"></textarea>
+										<textarea name="descpt"></textarea>
 									</label><br>
 									<label> Descrição - Inglês
-										<textarea name="participantedesc"></textarea>
+										<textarea name="descen"></textarea>
 									</label>
 								</td>
 							</tr>

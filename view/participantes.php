@@ -3,7 +3,7 @@
 <head>
 	<?php require_once "frames/head.php" ?>
 	<title>Universidade Estadual Paulista - Lapesa - Participantes</title>
-	<link rel="stylesheet" type="text/css" href="style/participantes.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/participantes.css" />
 </head>
 <body>
 

@@ -3,8 +3,8 @@
 <head>
 	<?php require_once "frames/head.php" ?>
 	<title>Universidade Estadual Paulista - Lapesa - Pesquisas e Projetos</title>
-	<link rel="stylesheet" type="text/css" href="style/pesquisa.css"/>
-	<script type="text/javascript" src="script/pesquisa.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/pesquisa.css"/>
+	<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/pesquisa.js"></script>
 </head>
 <body>
 <!-- Elementos Ocultos -->
@@ -12,7 +12,7 @@
 	<div class="software-descricao">
 		<button type="button" class="fechar-descricao">X</button>
 		<figure>
-			<img src="style/images/logo-padrao.png" width="150" height="150">
+			<img src="<?php echo BASE_URL; ?>assets/css/img/logo-padrao.png" width="150" height="150">
 			<p class="text-bold">Desenvolvido por:</p>
 			<p>nome-do-desenvolvedor</p><br>
 			<p class="text-bold">Ano:</p>
@@ -26,7 +26,7 @@
 				nunc. Fusce eu felis et felis tincidunt placerat vitae non erat.Curabitur maximus mi sed lobortis
 				congue. 
 			</p>
-			<a href="cadastro.php">Download</a>
+			<a href="<?php echo BASE_URL; ?>cadastro">Download</a>
 		</section>
 	</div>
 </div>
